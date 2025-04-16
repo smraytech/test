@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    body {
+        background: #000;
+        color: #000;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mySwiper2 {
+        height: 100%;
+        width: 80%;
+    }
+
+    .mySwiper {
+        height: 20%;
+        width: 80%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+
+
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f9;
+        color: #333;
+    }
+
+
+
+    header {
+        background: #2e3d59;
+        color: #fff;
+        padding: 1.5rem 2rem;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .header-text {
+        max-width: 90%;
+    }
+
+    .logo {
+        width: 10%; /* adjust as needed */
+        height: 60%;
+    }
+
+    nav {
+        background: #1e2a3f;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0.8rem 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2e3d59;
+      margin-bottom: 0.5rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      background: #2e3d59;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .btn {
+      background: #4caf50;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .school-image, .activity-image {
+      text-align: center;
+    }
+
+    .school-image img, .activity-image img {
+      max-width: 95%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+
+
+    #vision-mission {
+        background: #f4f4f9;
+        color: #333;
+        padding: 3rem 2rem;
+        text-align: left;
+    }
+
+.core-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.core-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-width: 300px;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.core-box:hover {
+  transform: translateY(-5px);
+}
+
+.core-box h3 {
+  color: #2e3d59;
+  margin-bottom: 1rem;
+}
+
+.core-box p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+          <div class="header-text">
+            <h1>Emmanuel International Christian School (EICS)</h1>
+            <p>Raising Christ-Centered Leaders for Tomorrow</p>
+          </div>
+          <img src="logo.jpg" alt="EICS Logo" class="logo" />
+        </div>
+    </header>
+
+    <nav>
+        <a href="#vision-mission">Who We Are</a>
+        <a href="#ministry">Church Ministry</a>
+        <a href="#events">Events</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+        <a href="#school">Our School</a>
+    </nav>
+
+
+    <section id="vision-mission">
+        <h2>Our Core Beliefs</h2>
+        <div class="core-container">
+          <div class="core-box">
+            <h3>Vision</h3>
+            <p>To raise Christ-centered, academically excellent, and morally upright leaders for tomorrow’s world.</p>
+          </div>
+          <div class="core-box">
+            <h3>Mission</h3>
+            <p>To provide Bible-based, individualized education that nurtures the whole child – spiritually, intellectually, emotionally, and socially.</p>
+          </div>
+          <div class="core-box">
+            <h3>Motto</h3>
+            <p>“Raising Christ-Centered Leaders for Tomorrow.”</p>
+          </div>
+        </div>
+      </section>
+
+    
+    <section id="ministry">
+        <h2>Ministry</h2>
+        <p>Our ministry is an integral part of the school community. We hold spirit-filled services, discipleship programs, and regular prayer meetings. We are committed to spreading the gospel of Jesus Christ and equipping believers for Kingdom impact.</p>
+        <p>Through both the school and the ministry, we believe in shaping lives for Christ — spiritually, morally, and intellectually.</p>
+        <a class="btn" href="#">Learn About Our Beliefs</a>
+    </section>
+    
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li><strong>Sunday Worship Service:</strong> Every Sunday, 10:00 AM</li>
+          <li><strong>Midweek Fellowship:</strong> Wednesdays at 6:00 PM</li>
+          <li><strong>EICS Open Day:</strong> Coming Soon – Stay Tuned!</li>
+        </ul>
+        <a class="btn" href="#">Explore More Events</a>
+    </section>
+    
+    <section id="activities">
+        <h2>Activities</h2>
+        <p>We believe that learning goes beyond the classroom. Our co-curricular activities support physical, social, and spiritual growth.</p>
+        <ul>
+          <li><strong>Swimming:</strong> Once a week from 11:00 AM to 12:00 PM</li>
+          <li><strong>Bible Study:</strong> Weekly group sessions to help students grow in their faith</li>
+        </ul>
+    </section>
+
+
+    <!-- Swiper -->
+
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="image 1.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 2.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 3.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 4.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 5.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 6.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 7.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 8.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 9.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 10.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 11.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 12.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 13.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 14.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 15.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 16.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 17.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 18.jpg" />
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="image 1.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 2.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 3.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 4.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 5.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 6.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 7.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 8.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 9.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 10.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 11.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 12.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 13.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 14.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 15.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 16.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 17.jpg" />
+            </div>
+            <div class="swiper-slide">
+                <img src="image 18.jpg" />
+            </div>
+        </div>
+    </div>
+
+
+    <section id="contact" style="background-color: #f0f4f8; padding: 3rem 2rem;">
+        <h2 style="text-align: center; color: #2e3d59;">Contact Us</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-around; max-width: 960px; margin: auto;">
+      
+          <div style="flex: 1; min-width: 280px;">
+            <h3>Reach Out</h3>
+            <p><strong>Email:</strong> <a href="mailto:eicsinternational@gmail.com">eicsinternational@gmail.com</a></p>
+            <p><strong>Phone:</strong></p>
+            <ul style="list-style: none; padding-left: 0;">
+              <li>📞 +256 766 188 494</li>
+              <li>📞 +256 704 617 261</li>
+              <li>📞 +256 782 165 135</li>
+            </ul>
+            <p><strong>Address:</strong><br/>Bulaga, Mityana Road, Wakiso District, Uganda</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Bulaga+Mityana+Road+Wakiso+Uganda" target="_blank" style="display:inline-block; margin-top:10px; background:#2e3d59; color:#fff; padding:10px 15px; border-radius:5px; text-decoration:none;">📍 View on Google Maps</a>
+          </div>
+      
+          <div style="flex: 1; min-width: 280px;">
+            <h3>Send Us a Message</h3>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;" />
+              <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;" />
+              <textarea name="message" rows="5" placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc;"></textarea>
+              <button type="submit" style="background-color: #4caf50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Send Message</button>
+            </form>
+          </div>
+      
+        </div>
+      </section>
+
+    <section id="school">
+        <h2>About Us</h2>
+        <p><strong>EICS</strong> is a Uganda-based Christian institution offering a <strong>Bible-Based, Individualized Curriculum</strong> to nurture academic excellence and spiritual growth. Our mission is to develop the whole child through personalized learning rooted in God’s Word.</p>
+        <p>From early childhood to advanced levels, we prioritize character development, leadership, and a deep understanding of Scripture alongside academic learning.</p>
+        <a class="btn" href="#">View Our Curriculum</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Emmanuel International Christian School (EICS) & Ministry. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+</body>
+
+</html>
